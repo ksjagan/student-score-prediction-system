@@ -2,7 +2,7 @@
 
 A comprehensive machine learning project demonstrating **regression modeling** with polynomial features, **MLflow experiment tracking**, and **DVC data versioning**.
 
-## 📊 Project Overview
+##  Project Overview
 
 This project predicts student scores based on various academic and behavioral features using:
 - **Exploratory Data Analysis (EDA)** - Understanding data distributions and correlations
@@ -12,7 +12,7 @@ This project predicts student scores based on various academic and behavioral fe
 - **MLflow Tracking** - Experiment tracking with metrics, parameters, and artifacts
 - **DVC Data Versioning** - Version control for datasets
 
-## 🎯 Target Variable
+##  Target Variable
 
 The project uses a **synthetic target variable** (`Target_Score`) with **quadratic characteristics**:
 
@@ -38,8 +38,8 @@ Target_Score = Base (30)
 - Reading × Listening: 0-8 points
 
 ### Why This Design?
-✅ **Linear regression** captures basic trends → decent performance  
-✅ **Polynomial (degree 2)** captures squared terms & interactions → **significantly better performance**
+ **Linear regression** captures basic trends → decent performance  
+ **Polynomial (degree 2)** captures squared terms & interactions → **significantly better performance**
 
 **Statistics:**
 - Range: 36.0 - 100.0
@@ -47,7 +47,7 @@ Target_Score = Base (30)
 - Std Dev: 16.34
 - Study Hours Correlation: +0.85
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Project 1 – Student Score Prediction System/
@@ -69,7 +69,7 @@ Project 1 – Student Score Prediction System/
 └── README.md                           # This file
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Create Virtual Environment
 
@@ -114,13 +114,13 @@ python train_model.py
 ```
 
 This will:
-- ✅ Perform **Exploratory Data Analysis (EDA)**
-- ✅ Load and preprocess student performance data
-- ✅ Train **Linear Regression** model (degree 1)
-- ✅ Train **Polynomial Regression** model (degree 2)
-- ✅ Generate visualization plots
-- ✅ Track experiments with **MLflow**
-- ✅ Save models and artifacts to `./models`
+-  Perform **Exploratory Data Analysis (EDA)**
+-  Load and preprocess student performance data
+-  Train **Linear Regression** model (degree 1)
+-  Train **Polynomial Regression** model (degree 2)
+-  Generate visualization plots
+-  Track experiments with **MLflow**
+-  Save models and artifacts to `./models`
 
 ### 5. View MLflow UI
 
@@ -130,25 +130,25 @@ mlflow ui
 
 Then open: **http://localhost:5000**
 
-## 📈 MLflow Experiment Tracking
+##  MLflow Experiment Tracking
 
 MLflow automatically tracks all experiments in the `mlruns/` directory.
 
 ### What MLflow Tracks:
 
-✅ **Parameters:**
+ **Parameters:**
 - Model type (Linear/Polynomial)
 - Polynomial degree
 - Number of features (5)
 - Train/test sample sizes
 
-✅ **Metrics:**
+ **Metrics:**
 - RMSE (Root Mean Squared Error)
 - MAE (Mean Absolute Error)
 - R² Score (coefficient of determination)
 - Training and test set performance
 
-✅ **Artifacts:**
+ **Artifacts:**
 - Trained model files
 - Prediction plots (actual vs predicted)
 - Residual plots
@@ -161,7 +161,7 @@ MLflow automatically tracks all experiments in the `mlruns/` directory.
 3. Compare experiments
 4. View metrics, plots, and model parameters
 
-## 🔄 DVC Data Versioning (Optional)
+##  DVC Data Versioning (Optional)
 
 DVC enables version control for datasets.
 
@@ -200,14 +200,14 @@ dvc push
 dvc pull
 ```
 
-## 📊 Model Comparison
+##  Model Comparison
 
 The project trains and compares two regression models:
 
 | Model | Description | Captures Non-linearity | Expected Performance |
 |-------|-------------|------------------------|---------------------|
-| **Linear (d=1)** | Simple linear fit | ❌ No | Decent baseline |
-| **Polynomial (d=2)** | Quadratic relationships | ✅ Yes | **Significantly Better** |
+| **Linear (d=1)** | Simple linear fit |  No | Decent baseline |
+| **Polynomial (d=2)** | Quadratic relationships |  Yes | **Significantly Better** |
 
 ### Why Polynomial Wins:
 The target variable includes:
@@ -215,7 +215,7 @@ The target variable includes:
 - Interaction terms (study × attendance)
 - These are captured perfectly by polynomial degree 2
 
-## 📚 Features Used
+##  Features Used
 
 The model uses **5 key features**:
 
@@ -227,7 +227,7 @@ The model uses **5 key features**:
 | `Reading` | Reading habits | +0.22 |
 | `Listening_in_Class` | Listening in class | +0.11 |
 
-## 🎯 Performance Metrics
+##  Performance Metrics
 
 Models are evaluated using:
 
@@ -243,7 +243,7 @@ Models are evaluated using:
   - Average absolute prediction error
   - More robust to outliers than RMSE
 
-## 📊 Visualizations Generated
+##  Visualizations Generated
 
 The project automatically creates:
 
@@ -264,23 +264,23 @@ The project automatically creates:
    - Combined overlay with smooth curves
    - Shows how degree 2 captures curved patterns
 
-## 🔍 Key Insights
+##  Key Insights
 
 After training, you'll observe:
 
-✅ **Linear Regression (Degree 1):**
+ **Linear Regression (Degree 1):**
 - Simple straight-line fit
 - Misses non-linear patterns
 - Decent R² (~0.70-0.80 range)
 - Underfits the data
 
-✅ **Polynomial Regression (Degree 2):**
+ **Polynomial Regression (Degree 2):**
 - Captures quadratic curved patterns
 - Much better fit for this target
 - High R² (~0.90-0.95 range)
 - **Significantly outperforms linear**
 
-## 📓 Jupyter Notebook
+##  Jupyter Notebook
 
 Interactive tutorial available: `notebooks/Student_Score_Prediction_Regression.ipynb`
 
@@ -299,7 +299,7 @@ jupyter notebook
 jupyter lab
 ```
 
-## 🛠️ Technical Details
+##  Technical Details
 
 ### Data Preprocessing:
 - Categorical encoding (LabelEncoder)
@@ -321,7 +321,7 @@ jupyter lab
 - Residual analysis for model validation
 - Color-coded comparison charts
 
-## 🤝 Contributing
+##  Contributing
 
 To extend this project:
 
@@ -347,7 +347,7 @@ To extend this project:
    - Create Streamlit dashboard
    - Deploy to cloud (AWS/Azure/GCP)
 
-## 📝 How to Use This Project
+##  How to Use This Project
 
 ### For Learning:
 1. Read through `train_model.py` to understand the workflow
@@ -363,7 +363,7 @@ To extend this project:
 4. Explain how polynomial regression captures non-linearity
 5. Compare R² scores between models
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 **Issue: Import errors**
 ```powershell
@@ -383,16 +383,17 @@ mlflow ui --port 5001
 python create_target_variable.py
 ```
 
-## 📄 License
+##  License
 
 This is an educational project for demonstrating ML concepts.
 
-## 👨‍💻 Author
+## Author
+K S Jagan
 
 Created as part of AI Engineering Projects portfolio.
 
 ---
 
-**Happy Learning! 🎓**
+**Happy Learning! **
 
 For questions or improvements, feel free to open an issue or submit a pull request.
