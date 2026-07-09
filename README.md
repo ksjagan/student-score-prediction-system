@@ -394,6 +394,6 @@ Created as part of AI Engineering Projects portfolio.
 
 ---
 
-**Happy Learning! **
+
 
 For questions or improvements, feel free to open an issue or submit a pull request.
