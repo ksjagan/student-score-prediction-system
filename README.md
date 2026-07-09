@@ -271,14 +271,14 @@ After training, you'll observe:
  **Linear Regression (Degree 1):**
 - Simple straight-line fit
 - Misses non-linear patterns
-- Decent R² (~0.70-0.80 range)
+- Decent R²
 - Underfits the data
 
  **Polynomial Regression (Degree 2):**
 - Captures quadratic curved patterns
 - Much better fit for this target
-- High R² (~0.90-0.95 range)
-- **Significantly outperforms linear**
+- High R² 
+- ** outperform linear**
 
 ##  Jupyter Notebook
 
